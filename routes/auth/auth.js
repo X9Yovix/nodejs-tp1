@@ -21,5 +21,8 @@ router.get('/objects', (req, res) => {
     res.send({ array: objects });
 });
 
+router.post('/post/:id', (req,res) => {
+    res.send({'element' : req.params.id})
+})
 
 module.exports = router
